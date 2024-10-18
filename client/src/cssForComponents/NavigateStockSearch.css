@@ -1,0 +1,146 @@
+/* Main navigation styles */
+.navigate-stock-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem; /* Increased padding for better spacing */
+  background: #151e28; /* Darker background gradient */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Shadow for depth */
+  padding-bottom: 7rem;
+  padding-top: 4rem;
+}
+
+/* Navigation container styles */
+.navigate-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.navigate-title {
+  font-size: 2.5rem; /* Large title for prominence */
+  color: #ffffff; /* White title color */
+  margin-bottom: 5px;
+  font-weight: 700; /* Bold for emphasis */
+}
+
+.navigate-subtitle {
+  font-size: 1.25rem; /* Subtitle font size */
+  color: #d1d1d1; /* Light gray color for contrast */
+  margin-bottom: 20px; /* Space below the subtitle */
+}
+
+/* Button styles */
+.navigate-button {
+  padding: 12px 24px; /* Consistent padding */
+  font-size: 1.1rem; /* Font size */
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for hover effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Button shadow */
+}
+
+.navigate-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Ads section styles */
+.ads-section {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 1.8rem; /* Increased font size */
+  color: #ffffff; /* Section title color */
+  margin-bottom: 15px;
+  font-weight: 600; /* Slightly bold */
+}
+
+/* Ads container styles */
+.ads-container {
+  display: flex;
+  justify-content: space-around; /* Align ads side by side */
+  flex-wrap: wrap; /* Allow ads to wrap on smaller screens */
+}
+
+/* Individual ad styles */
+.ad {
+  width: 45%; /* Set a width for the ad */
+  height: 320px; /* Set a fixed height */
+  border-radius: 8px;
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the background image */
+  display: flex;
+  flex-direction: column; /* Column layout for title and description */
+  align-items: flex-start; /* Align text at the top */
+  justify-content: flex-end; /* Align text at the bottom */
+  padding: 10px;
+  color: white; /* Set text color */
+  position: relative;
+  margin-bottom: 20px; /* Space between ads */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Background images for ads */
+.ad.ad-1 {
+  background-image: url('../images/coin.jpg'); /* Background image for Ad 1 */
+}
+
+.ad.ad-2 {
+  background-image: url('../images/stock.jpeg'); /* Background image for Ad 2 */
+}
+
+/* Ad title styles */
+.ad-title {
+  font-size: 1.2rem; /* Title font size */
+  font-weight: 600; /* Bold title */
+}
+
+/* Ad description styles */
+.ad-description {
+  background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background for better readability */
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 0.9rem; /* Font size for the description */
+}
+
+/* Information section styles */
+.info-section {
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px; /* Add padding for spacing */
+  background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.info-text {
+  font-size: 1.1rem; /* Increased font size for readability */
+  color: #f1f1f1; /* Lighter color for better contrast */
+  max-width: 800px; /* Limit width for better readability */
+  line-height: 1.6; /* Improved line spacing */
+  margin: 0 auto; /* Center the text block */
+}
+
+/* Cryptocurrency section styles */
+.crypto-section {
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly white background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding around the section */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.crypto-text {
+  font-size: 1rem; /* Font size for cryptocurrency information */
+  color: #f1f1f1; /* Text color for contrast */
+  max-width: 700px; /* Limit width for better readability */
+  line-height: 1.6; /* Improved line spacing */
+  margin: 0 auto; /* Center the text block */
+  margin-top: 10px; /* Space above text */
+}

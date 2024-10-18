@@ -1,0 +1,147 @@
+/* Main container styles */
+.market-and-sectors {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: url('../images/stockmarket.jpg') no-repeat center center; /* Add background image */
+  background-size: cover; /* Make sure the image covers the entire container */
+  position: relative;
+  padding-bottom: 5rem;
+  min-height: 75vh; /* Ensure it covers the full height */
+}
+
+/* Optional: Overlay for better readability */
+.market-and-sectors::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); 
+  filter: blur(4px); /* Add blur effect */
+  z-index: 0;
+}
+
+.market-and-sectors > * {
+  position: relative;
+}
+
+.market-and-sectors h2 {
+  font-size: 2rem; /* Large title for prominence */
+  color: #ffffff; /* White title color */
+  margin-bottom: 5px;
+  font-weight: 700; /* Bold for emphasis */
+  text-align: center;
+  margin: 0;
+  margin-top: 3.5rem;
+}
+
+/* Row styles for sector cards */
+.sector-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Card styles for each sector */
+.sector-card {
+  flex: 1;
+  background: linear-gradient(135deg, #09203f, #537895); /* Card gradient background */
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+}
+
+/* Decorative patterns on cards */
+.sector-card::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 50px;
+  height: 50px;
+  background: url("pattern.svg") no-repeat center center; /* Decorative pattern */
+  opacity: 0.1; /* Subtle opacity */
+  pointer-events: none; /* Disable pointer events */
+}
+
+/* Card hover effects */
+.sector-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #764ba2, #667eea); /* Gradient transition on hover */
+}
+
+/* Sector title styles */
+.sector-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Sector price styles */
+.sector-price {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 0.5rem;
+}
+
+/* Change indicator styles */
+.change-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Positive and negative percentage styles */
+.positive .percentage,
+.fa-arrow-up {
+  color: #00c853;
+}
+
+.negative .percentage,
+.fa-arrow-down {
+  color: #e74c3c;
+}
+
+.fa-arrow-up,
+.fa-arrow-down {
+  margin-left: 0.5rem;
+}
+
+/* Loading spinner container */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sector-card {
+    flex-basis: calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .sector-card {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+}
